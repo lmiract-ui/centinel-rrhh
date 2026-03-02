@@ -333,12 +333,13 @@ export default function App() {
                   {prefStep === 8 && "Si un cliente pide algo que no tenemos desarrollado, que haces?"}
                 </h2>
                 {prefStep === 2 && <p className="text-white text-lg font-normal pb-4 leading-snug">Luego de los 60 días pasas a ganar solo por comisión (las comisiones son un 75% mas elevadas que los primeros 60 días)</p>}
+                {prefStep === 3 && <p className="text-white/60 italic font-normal pb-4">Se 100% franco</p>}
                 {prefStep === 4 && <p className="text-white/60 italic font-normal pb-4">Tuviste una reunión excelente pero el prospecto deja de responder.</p>}
                 {prefStep === 7 && <p className="text-white/60 italic font-normal pb-4">"La competencia me ofrece lo mismo un 30% más barato".</p>}
                 <div className="grid gap-3 font-bold">
                   {(prefStep === 1 ? ["Remoto con 2 presenciales semanales me sirve.", "Solo acepto trabajo 100% remoto.", "Busco una oficina para ir todos los días."] :
                     prefStep === 2 ? ["Es el modelo que busco para no tener techo.", "Prefiero un sueldo fijo que me dé seguridad."] :
-                    prefStep === 3 ? ["Puedo facturar como monotributista.", "No tengo ni planeo gestionar facturación."] :
+                    prefStep === 3 ? ["Puedo dedicarme 100% a esto, poner toda mi energia en este puesto", "No puedo dedicarme 100% a esto ya que tengo otras tareas"] :
                     prefStep === 4 ? ["Le escribo con franqueza: 'Si tus prioridades cambiaron...'", "Dejo de insistir. Foco en quien tiene hambre hoy.", "Le sigo mandando data útil cada un par de días."] :
                     prefStep === 6 ? ["Llamo a su teléfono para avisar y empiezo por voz.", "Escribo un mail pidiendo reprogramar.", "Espero a que el servicio se restablezca."] :
                     prefStep === 7 ? ["“Si el precio es lo más importante, tal vez otra opción sea mejor.”", "“Entiendo. Antes de hablar de precio, ¿con qué nos compara?”", "“Podemos armar una versión diferente para acercar el número.”"] :
